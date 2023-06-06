@@ -1,0 +1,79 @@
+@font-face
+{
+    font-family: spaceAge;
+    src: url(/fonts/spaceAge.ttf);
+    font-weight: normal;
+}
+@font-face
+{
+    font-family: ethnocentricRegular;
+    src: url(/fonts/ethnocentricRegular.ttf);
+    font-weight: normal;
+}
+@font-face
+{
+    font-family: ethnocentricRegularItalic;
+    src: url(/fonts/ethnocentricRegularItalic.ttf);
+    font-weight: normal;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+
+    color: white;
+    background-image: url('./Textures/Skybox/top.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: spaceAge;
+    font-size: 16px;
+
+    overflow: hidden;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+img
+{
+    width: 200px;
+
+    margin-top: 20px;
+    margin-left: 20px;
+}
+button
+{
+    position: absolute;
+    
+    width: 280px;
+    height: 80px;
+
+    color: white;
+    background-color: rgb(0, 40, 63, 0.8);
+
+    font-family: spaceAge;
+    font-size: 30px;
+
+    border: none;
+    border-radius: 5px;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+    cursor: pointer;
+}
+div
+{
+    position: absolute;
+
+    right: 20px;
+    bottom: 20px;
+}

@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<title>Space - Pflichtabgabe - WebGL</title>
+
+		<link rel="icon" type="image/png" href="./favicon.png" sizes="32x32">
+
+		<link rel="stylesheet" href="space.css">
+	</head>
+	<body onload="InitSpace()">
+		<div class="container">
+			<canvas id="spaceCanvas">
+				Dein Browser unterstützt HTML5-Canvases nicht!
+			</canvas>
+
+			<div class="overlay">
+				<span id="coordinates" class="coordinates">0.00 / 0.00 / 0.00</span>
+				<span class="coordinatesTitle">coordinates</span>
+
+				<span id="rotation" class="rotation">0°</span>
+				<span class="rotationTitle">rotation</span>
+
+				<span id="time" class="time">00m 00s</span>
+				<span class="timeTitle">time</span>
+
+				<span id="temperature" class="temperature">0 °C</span>
+				<span class="temperatureTitle">temperature</span>
+
+				<div id="deathSentence" class="deathSentence">
+					Hier ist es etwas heiß, oder? 💀
+				</div>
+			</div>
+		</div>
+
+		<!--* AUDIO *-->
+		<audio id="atmospheric" src="./Audio/atmospheric.mp3" autoplay="true" loop="true"></audio>
+		<audio id="rocket" src="./Audio/rocket.mp3" loop="true"></audio>
+
+		<!--* TEXTURES *-->
+		<!--* SKYBOX *-->
+		<img id="skyboxRight" src="./Textures/Skybox/right.png">
+		<img id="skyboxLeft" src="./Textures/Skybox/left.png">
+		<img id="skyboxUp" src="./Textures/Skybox/top.png">
+		<img id="skyboxDown" src="./Textures/Skybox/bottom.png">
+		<img id="skyboxBack" src="./Textures/Skybox/back.png">
+		<img id="skyboxFront" src="./Textures/Skybox/front.png">
+		
+		<!--* PLANET EARTH *-->
+		<img id="planetEarthDay" src="./Textures/Planets/Earth/earth_day.png">
+		<img id="planetEarthNight" src="./Textures/Planets/Earth/earth_night.png">
+		<img id="planetEarthClouds" src="./Textures/Planets/Earth/earth_clouds.png">
+
+		<img id="forceField" src="./Textures/Planets/forceField.png">
+		
+		<!--* PLANET SUN *-->
+		<img id="sunGradient" src="./Textures/Planets/sunGradient.png">
+
+		<!--* HOLOGRAM *-->
+		<video id="hologram" src="./Textures/Planets/hologram.mp4" autoplay="true" loop="true" muted="true"></video>
+
+		<!--* SPACESHIP *-->
+		<!--<img id="spaceship" src="./Textures/SpaceShip/BlackSpace.png">-->
+		<img id="spaceship" src="./Textures/SpaceShip/spaceship.png">
+
+		<!--******************************************************************************************************************-->
+
+
+		<!--! LIBRARIES !-->
+		<script src="./Libraries/Utils.js"></script>
+		<script src="./Libraries/GLMF.js"></script>
+		<script src="./Libraries/Input.js"></script>
+		
+		<script src="./space.js"></script>
+
+		<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+
+		<!--? COMPONENTS ?-->
+		<script src="./Components/Skybox.js"></script>
+
+		<script src="./Components/Sun.js"></script>
+
+		<script src="./Components/Earth.js"></script>
+		
+		<script src="./Components/ForceField.js"></script>
+
+		<script src="./Components/Spaceship.js"></script>
+
+		<script src="./Components/Hologram.js"></script>
+
+		<script src="./Components/TeapotItem.js"></script>
+
+		<script src="./Components/MugItem.js"></script>
+
+		<script src="./Components/MugItem2.js"></script>
+
+		<script src="./Components/CupItem.js"></script>
+
+		<!--??????????????????????????????????????????????????????????????????????????????????????????????????????????????????-->
+	</body>
+</html>

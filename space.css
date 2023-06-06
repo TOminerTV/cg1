@@ -1,0 +1,204 @@
+@font-face
+{
+    font-family: spaceAge;
+    src: url(/fonts/spaceAge.ttf);
+    font-weight: normal;
+}
+@font-face
+{
+    font-family: ethnocentricRegular;
+    src: url(/fonts/ethnocentricRegular.ttf);
+    font-weight: normal;
+}
+@font-face
+{
+    font-family: ethnocentricRegularItalic;
+    src: url(/fonts/ethnocentricRegularItalic.ttf);
+    font-weight: normal;
+}
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+
+    font-family: spaceAge;
+
+    overflow: hidden;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+canvas
+{
+    width: 100%;
+    height: 100%;
+}
+img, video, audio
+{
+    display: none;
+}
+
+
+.container
+{
+    position: relative;
+}
+.container canvas
+{
+    position: absolute;
+}
+.overlay
+{
+    width: 100vw;
+    height: 100vh;
+
+    text-transform: uppercase;
+}
+.overlay .coordinates
+{
+    position: absolute;
+
+    color: #f1d874;
+    font-size: 20px;
+    
+    text-shadow:
+    0 0 4px #F1C40F,
+    0 0 10px #F1C40F,
+    0 0 18px #F1C40F;
+
+    top: 30%;
+    left: 39%;
+}
+.overlay .coordinatesTitle
+{
+    position: absolute;
+
+    color: #f1d874;
+    font-size: 14px;
+    
+    text-shadow:
+    0 0 4px #F1C40F,
+    0 0 10px #F1C40F,
+    0 0 18px #F1C40F;
+
+    top: 32%;
+    left: 39%;
+}
+.overlay .rotation
+{
+    position: absolute;
+
+    color: #f1d874;
+    font-size: 20px;
+    
+    text-shadow:
+    0 0 4px #F1C40F,
+    0 0 10px #F1C40F,
+    0 0 18px #F1C40F;
+
+    top: 35%;
+    left: 39%;
+}
+.overlay .rotationTitle
+{
+    position: absolute;
+
+    color: #f1d874;
+    font-size: 14px;
+    
+    text-shadow:
+    0 0 4px #F1C40F,
+    0 0 10px #F1C40F,
+    0 0 18px #F1C40F;
+
+    top: 37%;
+    left: 39%;
+}
+.overlay .time
+{
+    position: absolute;
+
+    color: #f1d874;
+    font-size: 20px;
+    
+    text-shadow:
+    0 0 4px #F1C40F,
+    0 0 10px #F1C40F,
+    0 0 18px #F1C40F;
+
+    top: 30%;
+    right: 39%;
+}
+.overlay .timeTitle
+{
+    position: absolute;
+
+    color: #f1d874;
+    font-size: 14px;
+    
+    text-shadow:
+    0 0 4px #F1C40F,
+    0 0 10px #F1C40F,
+    0 0 18px #F1C40F;
+
+    top: 32%;
+    right: 39%;
+}
+.overlay .temperature
+{
+    position: absolute;
+
+    color: #f1d874;
+    font-size: 20px;
+    
+    text-shadow:
+    0 0 4px #F1C40F,
+    0 0 10px #F1C40F,
+    0 0 18px #F1C40F;
+
+    top: 35%;
+    right: 39%;
+}
+.overlay .temperatureTitle
+{
+    position: absolute;
+
+    color: #f1d874;
+    font-size: 14px;
+    
+    text-shadow:
+    0 0 4px #F1C40F,
+    0 0 10px #F1C40F,
+    0 0 18px #F1C40F;
+
+    top: 37%;
+    right: 39%;
+}
+.overlay .deathSentence
+{
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+
+    color: #ca554a;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    font-size: 30px;
+    
+    text-shadow:
+    0 0 4px #A93226,
+    0 0 10px #A93226,
+    0 0 18px #A93226;
+
+    text-align: center;
+    line-height: 100vh;
+
+    display: none;
+}
